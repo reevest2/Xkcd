@@ -4,17 +4,25 @@
 @{      
     ViewData["Title"] = "Comics";
 }
+<div class="d-flex justify-content-center">
+    <table class="table">
+        <tbody>
+            @foreach (var xkcd in Model)
+            {
+                <tr>
+                    <td>@xkcd.Num</td>
+                    <td>@xkcd.Title</td>
+                    <td>@xkcd.Link</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
-<table class="table">
-    <tbody>
-        @foreach (var xkcd in Model)
-        {
-            <tr>
-                <td>@xkcd.Num</td>
-                <td>@xkcd.Title</td>
-                <td>@xkcd.Link</td>
-                <td>@xkcd.Img</td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="d-flex justify-content-center">
+    @foreach (var xkcd in Model)
+    {
+     <img src="@xkcd.Img">
+
+    }
+</div>
