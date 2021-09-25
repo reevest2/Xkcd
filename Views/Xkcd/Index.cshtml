@@ -1,0 +1,20 @@
+﻿@model List<xkcd.Models.Xkcd>
+
+
+@{      
+    ViewData["Title"] = "Comics";
+}
+
+<table class="table">
+    <tbody>
+        @foreach (var xkcd in Model)
+        {
+            <tr>
+                <td>@xkcd.Num</td>
+                <td>@xkcd.Title</td>
+                <td>@xkcd.Link</td>
+                <td>@xkcd.Img</td>
+            </tr>
+        }
+    </tbody>
+</table>
