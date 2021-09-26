@@ -10,7 +10,7 @@ using xkcd.Client;
 
 namespace xkcd.Controllers
 {
-    [Route("xkcd")]
+    //[Route("xkcd")]   <--IDK what this does but it makes this page not be able to be used as the homepage
     public class XkcdController : Controller
     {
         Xkcd _xkcd = new Xkcd();

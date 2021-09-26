@@ -52,7 +52,7 @@ namespace xkcd
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Xkcd}/{action=Index}/{id?}");
             });
         }
     }
